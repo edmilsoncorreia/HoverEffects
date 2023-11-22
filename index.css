@@ -65,6 +65,7 @@ body{
   transition: all .5s;
 }
 
+/* Botão 1 */
 .item1::before {
   width: 0;
   height: 100%;
@@ -77,6 +78,7 @@ body{
   width: 100%;
 }
 
+/* Botão 2 */
 .item2::before {
   width: 0;
   height: 100%;
@@ -89,6 +91,7 @@ body{
   width: 100%;
 }
 
+/* Botão 3 */
 .item3::before {
   width: 100%;
   height: 0%;
@@ -102,6 +105,7 @@ body{
   height: 360%;
 }
 
+/* Botão 4 */
 .item4::before {
   width: 100%;
   height: 100%;
@@ -119,3 +123,20 @@ body{
   transform-origin: left;
 }
 
+/* Botão 5 */
+.item5::before {
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+.item5:hover::before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
