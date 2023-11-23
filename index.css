@@ -140,3 +140,21 @@ body{
   transform: scaleX(1);
   transform-origin: right;
 }
+
+/* Botão 6 */
+.item6::before {
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleY(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.item6:hover::before {
+  transform: scaleY(1);
+  transform-origin: left;
+}
