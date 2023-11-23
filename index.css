@@ -54,6 +54,7 @@ body{
   text-decoration: underline;
 }
 
+/* Regras botões de 1 a 6 */
 .button::before {
   content:"";
   width: 100%;
@@ -138,6 +139,7 @@ body{
 
 .item5:hover::before {
   transform: scaleX(1);
+
   transform-origin: right;
 }
 
@@ -158,3 +160,44 @@ body{
   transform: scaleY(1);
   transform-origin: left;
 }
+
+/* Regras Botões Inter 1 ao 3*/
+.button-inter {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  margin: 0;
+  padding: 12px 0;
+
+  font-family: Inter;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: white;
+  border: 1px solid blueviolet;
+
+  text-decoration: none;
+
+  transition: .5s;
+
+}
+
+.item7:hover {
+  background: #730bec url(pixel_qwmcwc.png);
+  background-size: 100%;
+  
+  transition-delay: .8s;
+  animation: animate1 .8s steps(8) fowards;
+}
+
+@keyframes animate1 {
+  0% {
+    background-position-y: 0;
+  } 100% {
+    background-position-y: -480px;
+  }
+}
+
