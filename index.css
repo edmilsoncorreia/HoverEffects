@@ -176,15 +176,17 @@ body{
   line-height: 28px;
   font-weight: 300;
 
-  color: white;
+  color: #fff;
   border: 1px solid blueviolet;
 
   text-decoration: none;
+  cursor: pointer;
 
   transition: .5s;
 
 }
 
+/* Botão 7 */
 .item7:hover {
   background: #730bec url(pixel_qwmcwc.png);
   background-size: 100%;
@@ -201,3 +203,47 @@ body{
   }
 }
 
+/* Botão 8 */
+.item8 span {
+  position: relative;
+  z-index: 3;
+}
+
+.item8::before {
+  content: "";
+  width: calc(100% + 2px);
+  height: calc(100% - 12px);
+
+  position: absolute;
+  top: 6px;
+  left: -1px;
+
+  background: #323232;
+
+  transition: .5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.item8:hover::before {
+  transform: scaleY(0);
+}
+
+.item8::after {
+  content: "";
+  width: calc(100% - 12px);
+  height: calc(100% + 4px);
+
+  position: absolute;
+
+  top: -2px;
+  left: 6px;
+
+  background: #323232;
+
+  transition: .5s ease-in-out;
+  transform: scaleX(1); 
+}
+
+.item8:hover::after {
+  transform: scaleX(0);
+}
